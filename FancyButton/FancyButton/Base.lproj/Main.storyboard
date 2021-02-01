@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FancyButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnM-Ms-cX3" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="50" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rbq-TV-u7I"/>
+                                </constraints>
+                                <state key="normal" title="SIGN IN">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleRightPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleTopPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleBottomPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeB-So-Ibn" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="166" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="HNU-vj-ffA"/>
+                                    <constraint firstAttribute="width" constant="64" id="lhj-Qg-Pw7"/>
+                                </constraints>
+                                <state key="normal" image="facebook-8"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50s-SX-e16" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="240" y="166" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="h3J-bC-gxX"/>
+                                    <constraint firstAttribute="height" constant="64" id="hLd-2M-piC"/>
+                                </constraints>
+                                <state key="normal" image="twitter-5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageBottomPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vC-nT-Yfu" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="108" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BRx-Ec-hzB"/>
+                                    <constraint firstAttribute="width" constant="80" id="GDl-gK-5al"/>
+                                </constraints>
+                                <state key="normal" image="facebook-6"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jou-gf-07d" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="238" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.122649543" green="0.45312047" blue="0.82356792690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h5b-kw-hpC"/>
+                                </constraints>
+                                <state key="normal" title="SIGN IN WITH FACEBOOK" image="facebook-6">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemIndigoColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageLeftPadding">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zA-f7-EvB" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="296" width="288" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1fW-YT-tFn"/>
+                                </constraints>
+                                <state key="normal" title="DOWNLOAD FILES" image="icloud.and.arrow.down" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableImageRightAligned" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageRightPadding">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTm-7N-DK1" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="224" y="108" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="PZU-If-UAn"/>
+                                </constraints>
+                                <state key="normal" image="twitter-2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXu-Gk-QeK" customClass="FancyButton" customModule="FancyButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="354" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7hJ-gb-YAQ"/>
+                                </constraints>
+                                <state key="normal" title="SIGN IN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.0" green="0.68212224284492595" blue="0.82356792690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.82356792690000002" green="0.0" blue="0.39589816356670993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jeB-So-Ibn" firstAttribute="top" secondItem="50s-SX-e16" secondAttribute="top" id="13b-SM-453"/>
+                            <constraint firstItem="bXu-Gk-QeK" firstAttribute="top" secondItem="0zA-f7-EvB" secondAttribute="bottom" constant="8" symbolic="YES" id="36y-fc-42E"/>
+                            <constraint firstItem="jeB-So-Ibn" firstAttribute="leading" secondItem="jou-gf-07d" secondAttribute="leading" id="7xL-1l-W4x"/>
+                            <constraint firstItem="0zA-f7-EvB" firstAttribute="trailing" secondItem="bXu-Gk-QeK" secondAttribute="trailing" id="Doc-oQ-OPj"/>
+                            <constraint firstItem="jou-gf-07d" firstAttribute="trailing" secondItem="0zA-f7-EvB" secondAttribute="trailing" id="HLm-eU-4P6"/>
+                            <constraint firstItem="jou-gf-07d" firstAttribute="leading" secondItem="0zA-f7-EvB" secondAttribute="leading" id="JE6-W0-EZm"/>
+                            <constraint firstItem="jeB-So-Ibn" firstAttribute="top" secondItem="5vC-nT-Yfu" secondAttribute="bottom" constant="8" symbolic="YES" id="KW2-lA-eN8"/>
+                            <constraint firstItem="0zA-f7-EvB" firstAttribute="top" secondItem="jou-gf-07d" secondAttribute="bottom" constant="8" symbolic="YES" id="O7d-0D-OiS"/>
+                            <constraint firstItem="EnM-Ms-cX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Wes-dP-5dJ"/>
+                            <constraint firstItem="jeB-So-Ibn" firstAttribute="baseline" secondItem="50s-SX-e16" secondAttribute="baseline" id="WnW-ou-SO7"/>
+                            <constraint firstItem="5vC-nT-Yfu" firstAttribute="top" secondItem="EnM-Ms-cX3" secondAttribute="bottom" constant="8" symbolic="YES" id="X1g-yt-kbF"/>
+                            <constraint firstItem="EnM-Ms-cX3" firstAttribute="leading" secondItem="5vC-nT-Yfu" secondAttribute="leading" id="aHI-iM-hjh"/>
+                            <constraint firstItem="EnM-Ms-cX3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fek-1F-fJL"/>
+                            <constraint firstItem="5vC-nT-Yfu" firstAttribute="top" secondItem="PTm-7N-DK1" secondAttribute="top" id="hCc-8h-lOh"/>
+                            <constraint firstItem="PTm-7N-DK1" firstAttribute="trailing" secondItem="50s-SX-e16" secondAttribute="trailing" id="k9Y-Uw-Fdd"/>
+                            <constraint firstItem="50s-SX-e16" firstAttribute="trailing" secondItem="jou-gf-07d" secondAttribute="trailing" id="mHK-Vz-eVC"/>
+                            <constraint firstItem="5vC-nT-Yfu" firstAttribute="firstBaseline" secondItem="PTm-7N-DK1" secondAttribute="firstBaseline" id="mua-KM-kah"/>
+                            <constraint firstItem="5vC-nT-Yfu" firstAttribute="baseline" secondItem="PTm-7N-DK1" secondAttribute="baseline" id="mvh-nd-LYd"/>
+                            <constraint firstItem="0zA-f7-EvB" firstAttribute="leading" secondItem="bXu-Gk-QeK" secondAttribute="leading" id="qqq-Yi-8Ye"/>
+                            <constraint firstItem="jeB-So-Ibn" firstAttribute="firstBaseline" secondItem="50s-SX-e16" secondAttribute="firstBaseline" id="rSO-cx-suy"/>
+                            <constraint firstItem="PTm-7N-DK1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5vC-nT-Yfu" secondAttribute="trailing" constant="20" id="tct-nz-eWt"/>
+                            <constraint firstItem="EnM-Ms-cX3" firstAttribute="trailing" secondItem="PTm-7N-DK1" secondAttribute="trailing" id="vEW-6Z-y9F"/>
+                            <constraint firstItem="5vC-nT-Yfu" firstAttribute="leading" secondItem="jeB-So-Ibn" secondAttribute="leading" id="wco-hn-u4c"/>
+                            <constraint firstItem="jou-gf-07d" firstAttribute="top" secondItem="jeB-So-Ibn" secondAttribute="bottom" constant="8" symbolic="YES" id="wjv-iQ-LN2"/>
+                            <constraint firstItem="EnM-Ms-cX3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wxj-9B-0jD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="76.911544227886068"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0zA-f7-EvB">
+            <size key="intrinsicContentSize" width="176" height="22"/>
+        </designable>
+        <designable name="50s-SX-e16">
+            <size key="intrinsicContentSize" width="64" height="64"/>
+        </designable>
+        <designable name="5vC-nT-Yfu">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="EnM-Ms-cX3">
+            <size key="intrinsicContentSize" width="54" height="30"/>
+        </designable>
+        <designable name="PTm-7N-DK1">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="bXu-Gk-QeK">
+            <size key="intrinsicContentSize" width="54" height="30"/>
+        </designable>
+        <designable name="jeB-So-Ibn">
+            <size key="intrinsicContentSize" width="64" height="64"/>
+        </designable>
+        <designable name="jou-gf-07d">
+            <size key="intrinsicContentSize" width="234" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="facebook-6" width="24" height="24"/>
+        <image name="facebook-8" width="64" height="64"/>
+        <image name="icloud.and.arrow.down" catalog="system" width="128" height="112"/>
+        <image name="twitter-2" width="24" height="24"/>
+        <image name="twitter-5" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
