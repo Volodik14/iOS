@@ -1,0 +1,19 @@
+{
+  "frames" : [
+    {
+      "filename" : "file_32356466.png"
+    },
+    {
+      "filename" : "file_32356503.png"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "duration" : 3,
+    "duration-type" : "fps",
+    "repetitions" : 0
+  }
+}

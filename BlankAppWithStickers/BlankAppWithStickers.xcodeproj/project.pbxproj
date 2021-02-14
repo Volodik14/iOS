@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFFF32B625D9C1CA00D5C3B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF32B525D9C1CA00D5C3B5 /* AppDelegate.swift */; };
+		AFFF32B825D9C1CA00D5C3B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF32B725D9C1CA00D5C3B5 /* SceneDelegate.swift */; };
+		AFFF32BA25D9C1CA00D5C3B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF32B925D9C1CA00D5C3B5 /* ViewController.swift */; };
+		AFFF32BD25D9C1CA00D5C3B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFF32BB25D9C1CA00D5C3B5 /* Main.storyboard */; };
+		AFFF32BF25D9C1CD00D5C3B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFF32BE25D9C1CD00D5C3B5 /* Assets.xcassets */; };
+		AFFF32C225D9C1CD00D5C3B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFF32C025D9C1CD00D5C3B5 /* LaunchScreen.storyboard */; };
+		AFFF32D025D9C1EB00D5C3B5 /* Stickers StickerPackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AFFF32CF25D9C1EB00D5C3B5 /* Stickers StickerPackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFFF32D425D9C1EB00D5C3B5 /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = AFFF32D325D9C1EB00D5C3B5 /* Stickers.xcstickers */; };
+		AFFF32D525D9C1EB00D5C3B5 /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = AFFF32D325D9C1EB00D5C3B5 /* Stickers.xcstickers */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFFF32D125D9C1EB00D5C3B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFF32AA25D9C1CA00D5C3B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFF32CE25D9C1EB00D5C3B5;
+			remoteInfo = "Stickers StickerPackExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFFF32D925D9C1EB00D5C3B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AFFF32D025D9C1EB00D5C3B5 /* Stickers StickerPackExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AFFF32B225D9C1CA00D5C3B5 /* BlankAppWithStickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankAppWithStickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFF32B525D9C1CA00D5C3B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFFF32B725D9C1CA00D5C3B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFFF32B925D9C1CA00D5C3B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFFF32BC25D9C1CA00D5C3B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFFF32BE25D9C1CD00D5C3B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFFF32C125D9C1CD00D5C3B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFFF32C325D9C1CD00D5C3B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFF32CC25D9C1EB00D5C3B5 /* Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFF32CF25D9C1EB00D5C3B5 /* Stickers StickerPackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Stickers StickerPackExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFF32D325D9C1EB00D5C3B5 /* Stickers.xcstickers */ = {isa = PBXFileReference; lastKnownFileType = folder.stickers; name = Stickers.xcstickers; path = "Stickers StickerPackExtension/Stickers.xcstickers"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFFF32AF25D9C1CA00D5C3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFFF32A925D9C1CA00D5C3B5 = {
+			isa = PBXGroup;
+			children = (
+				AFFF32D325D9C1EB00D5C3B5 /* Stickers.xcstickers */,
+				AFFF32B425D9C1CA00D5C3B5 /* BlankAppWithStickers */,
+				AFFF32B325D9C1CA00D5C3B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFFF32B325D9C1CA00D5C3B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFFF32B225D9C1CA00D5C3B5 /* BlankAppWithStickers.app */,
+				AFFF32CC25D9C1EB00D5C3B5 /* Stickers.app */,
+				AFFF32CF25D9C1EB00D5C3B5 /* Stickers StickerPackExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFFF32B425D9C1CA00D5C3B5 /* BlankAppWithStickers */ = {
+			isa = PBXGroup;
+			children = (
+				AFFF32B525D9C1CA00D5C3B5 /* AppDelegate.swift */,
+				AFFF32B725D9C1CA00D5C3B5 /* SceneDelegate.swift */,
+				AFFF32B925D9C1CA00D5C3B5 /* ViewController.swift */,
+				AFFF32BB25D9C1CA00D5C3B5 /* Main.storyboard */,
+				AFFF32BE25D9C1CD00D5C3B5 /* Assets.xcassets */,
+				AFFF32C025D9C1CD00D5C3B5 /* LaunchScreen.storyboard */,
+				AFFF32C325D9C1CD00D5C3B5 /* Info.plist */,
+			);
+			path = BlankAppWithStickers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFFF32B125D9C1CA00D5C3B5 /* BlankAppWithStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFF32C625D9C1CD00D5C3B5 /* Build configuration list for PBXNativeTarget "BlankAppWithStickers" */;
+			buildPhases = (
+				AFFF32AE25D9C1CA00D5C3B5 /* Sources */,
+				AFFF32AF25D9C1CA00D5C3B5 /* Frameworks */,
+				AFFF32B025D9C1CA00D5C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlankAppWithStickers;
+			productName = BlankAppWithStickers;
+			productReference = AFFF32B225D9C1CA00D5C3B5 /* BlankAppWithStickers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFFF32CB25D9C1EB00D5C3B5 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFF32DA25D9C1EB00D5C3B5 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				AFFF32CA25D9C1EB00D5C3B5 /* Resources */,
+				AFFF32D925D9C1EB00D5C3B5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFF32D225D9C1EB00D5C3B5 /* PBXTargetDependency */,
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = AFFF32CC25D9C1EB00D5C3B5 /* Stickers.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		AFFF32CE25D9C1EB00D5C3B5 /* Stickers StickerPackExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFF32D625D9C1EB00D5C3B5 /* Build configuration list for PBXNativeTarget "Stickers StickerPackExtension" */;
+			buildPhases = (
+				AFFF32CD25D9C1EB00D5C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stickers StickerPackExtension";
+			productName = "Stickers StickerPackExtension";
+			productReference = AFFF32CF25D9C1EB00D5C3B5 /* Stickers StickerPackExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFFF32AA25D9C1CA00D5C3B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AFFF32B125D9C1CA00D5C3B5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AFFF32CB25D9C1EB00D5C3B5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AFFF32CE25D9C1EB00D5C3B5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = AFFF32AD25D9C1CA00D5C3B5 /* Build configuration list for PBXProject "BlankAppWithStickers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFFF32A925D9C1CA00D5C3B5;
+			productRefGroup = AFFF32B325D9C1CA00D5C3B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFFF32B125D9C1CA00D5C3B5 /* BlankAppWithStickers */,
+				AFFF32CB25D9C1EB00D5C3B5 /* Stickers */,
+				AFFF32CE25D9C1EB00D5C3B5 /* Stickers StickerPackExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFFF32B025D9C1CA00D5C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFF32C225D9C1CD00D5C3B5 /* LaunchScreen.storyboard in Resources */,
+				AFFF32BF25D9C1CD00D5C3B5 /* Assets.xcassets in Resources */,
+				AFFF32BD25D9C1CA00D5C3B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFF32CA25D9C1EB00D5C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFF32D525D9C1EB00D5C3B5 /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFF32CD25D9C1EB00D5C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFF32D425D9C1EB00D5C3B5 /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFFF32AE25D9C1CA00D5C3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFF32BA25D9C1CA00D5C3B5 /* ViewController.swift in Sources */,
+				AFFF32B625D9C1CA00D5C3B5 /* AppDelegate.swift in Sources */,
+				AFFF32B825D9C1CA00D5C3B5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFFF32D225D9C1EB00D5C3B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFF32CE25D9C1EB00D5C3B5 /* Stickers StickerPackExtension */;
+			targetProxy = AFFF32D125D9C1EB00D5C3B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFFF32BB25D9C1CA00D5C3B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFF32BC25D9C1CA00D5C3B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFFF32C025D9C1CD00D5C3B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFF32C125D9C1CD00D5C3B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFFF32C425D9C1CD00D5C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFFF32C525D9C1CD00D5C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFFF32C725D9C1CD00D5C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5BL59AE35;
+				INFOPLIST_FILE = BlankAppWithStickers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MVM.BlankAppWithStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFFF32C825D9C1CD00D5C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5BL59AE35;
+				INFOPLIST_FILE = BlankAppWithStickers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MVM.BlankAppWithStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFFF32D725D9C1EB00D5C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5BL59AE35;
+				INFOPLIST_FILE = "Stickers StickerPackExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MVM.Stickers.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFFF32D825D9C1EB00D5C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5BL59AE35;
+				INFOPLIST_FILE = "Stickers StickerPackExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MVM.Stickers.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFFF32DB25D9C1EB00D5C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5BL59AE35;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MVM.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFFF32DC25D9C1EB00D5C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5BL59AE35;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MVM.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFFF32AD25D9C1CA00D5C3B5 /* Build configuration list for PBXProject "BlankAppWithStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFF32C425D9C1CD00D5C3B5 /* Debug */,
+				AFFF32C525D9C1CD00D5C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFF32C625D9C1CD00D5C3B5 /* Build configuration list for PBXNativeTarget "BlankAppWithStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFF32C725D9C1CD00D5C3B5 /* Debug */,
+				AFFF32C825D9C1CD00D5C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFF32D625D9C1EB00D5C3B5 /* Build configuration list for PBXNativeTarget "Stickers StickerPackExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFF32D725D9C1EB00D5C3B5 /* Debug */,
+				AFFF32D825D9C1EB00D5C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFF32DA25D9C1EB00D5C3B5 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFF32DB25D9C1EB00D5C3B5 /* Debug */,
+				AFFF32DC25D9C1EB00D5C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFFF32AA25D9C1CA00D5C3B5 /* Project object */;
+}
