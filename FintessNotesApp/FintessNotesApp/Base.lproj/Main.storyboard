@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="igC-Yb-lRu">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Календарь-->
+        <scene sceneID="HNF-gh-OEt">
+            <objects>
+                <viewController id="o91-mI-I9L" customClass="DoneExerciseViewController" customModule="FintessNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hn-Hf-efp">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qss-33-MWz"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Календарь" image="calendar" catalog="system" selectedImage="calendar" id="F0z-pk-EeZ"/>
+                    <navigationItem key="navigationItem" id="8Ew-hE-H7S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoS-jU-AQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460.8695652173915" y="447.99107142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fM1-Vq-VOw">
+            <objects>
+                <tabBarController id="igC-Yb-lRu" customClass="ViewController" customModule="FintessNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l0D-dH-Hvn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.82356792690000002" green="0.15866146480000001" blue="0.20513166220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemRedColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bDt-GX-kFk" kind="relationship" relationship="viewControllers" id="Xxd-gF-CiY"/>
+                        <segue destination="o91-mI-I9L" kind="relationship" relationship="viewControllers" id="nKK-YG-lnZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3e5-jk-Irg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1383" y="448"/>
+        </scene>
+        <!--Exercises Table View Controller-->
+        <scene sceneID="BqH-gn-QOK">
+            <objects>
+                <tableViewController id="2gF-Tu-f9q" customClass="ExercisesTableViewController" customModule="FintessNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Npu-lR-WVM">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ndu-op-aXw" customClass="ExerciseTableViewCell" customModule="FintessNotesApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="428" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ndu-op-aXw" id="wbr-dt-bqf">
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2gF-Tu-f9q" id="uYk-8z-KUf"/>
+                            <outlet property="delegate" destination="2gF-Tu-f9q" id="fi0-7z-V1Y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xAt-2q-XKe"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Npu-lR-WVM" id="zda-i8-EXS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHt-42-kGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513.04347826086962" y="447.99107142857139"/>
+        </scene>
+        <!--Training View Controller-->
+        <scene sceneID="WvV-pq-yvd">
+            <objects>
+                <viewController storyboardIdentifier="TrainingViewController" id="Djy-id-siD" userLabel="Training View Controller" customClass="TrainingViewController" customModule="FintessNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zqj-1k-bZl">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Упражнения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkU-ap-YqL">
+                                <rect key="frame" x="103" y="235.33333333333334" width="222" height="31.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Название" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqQ-vT-clD">
+                                <rect key="frame" x="27" y="178.33333333333334" width="374" height="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBO-fv-DsB" customClass="FancyButton" customModule="FintessNotesApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="286.66666666666669" width="388" height="38"/>
+                                <color key="backgroundColor" red="0.68261921489155375" green="0.15866146480000001" blue="0.20513166220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Добавить упражнение">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onAddExerciseClick:" destination="Djy-id-siD" eventType="touchUpInside" id="OF5-i6-7WW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ax-AP-Cyq">
+                                <rect key="frame" x="103" y="122.99999999999999" width="222" height="31.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N4U-TU-sGF">
+                                <rect key="frame" x="20" y="345" width="388" height="458"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="exerciseCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" textLabel="Vhe-j8-gZq" style="IBUITableViewCellStyleDefault" id="dqY-eN-lZ1">
+                                        <rect key="frame" x="0.0" y="28" width="388" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dqY-eN-lZ1" id="DMs-zT-jK3">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vhe-j8-gZq">
+                                                    <rect key="frame" x="20" y="0.0" width="348" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.65941721239999995" green="0.65829600079999995" blue="0.63579967280000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Djy-id-siD" id="Rwq-TM-ff9"/>
+                                    <outlet property="delegate" destination="Djy-id-siD" id="hgV-9E-wgU"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hB-AO-jwL" customClass="FancyButton" customModule="FintessNotesApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="813" width="388" height="38"/>
+                                <color key="backgroundColor" red="0.68261921489999999" green="0.15866146480000001" blue="0.20513166220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Сохранить тренировку">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSaveClick:" destination="Djy-id-siD" eventType="touchUpInside" id="RbJ-dF-mKH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Re-Lw-QMn"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.14901960784313725" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="bottom" secondItem="1hB-AO-jwL" secondAttribute="bottom" constant="41" id="COn-YV-0aZ"/>
+                            <constraint firstItem="1hB-AO-jwL" firstAttribute="top" secondItem="N4U-TU-sGF" secondAttribute="bottom" constant="10" id="MuI-bX-8Ln"/>
+                            <constraint firstItem="XkU-ap-YqL" firstAttribute="top" secondItem="jqQ-vT-clD" secondAttribute="bottom" constant="20" id="QZ9-az-Pah"/>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="trailing" secondItem="1hB-AO-jwL" secondAttribute="trailing" constant="20" id="U2k-hp-yOD"/>
+                            <constraint firstItem="jqQ-vT-clD" firstAttribute="top" secondItem="4ax-AP-Cyq" secondAttribute="bottom" constant="24" id="V6L-aC-rlS"/>
+                            <constraint firstItem="N4U-TU-sGF" firstAttribute="leading" secondItem="4Re-Lw-QMn" secondAttribute="leading" constant="20" id="Vag-FJ-ncm"/>
+                            <constraint firstItem="jqQ-vT-clD" firstAttribute="leading" secondItem="4Re-Lw-QMn" secondAttribute="leading" constant="27" id="cQJ-XL-2eL"/>
+                            <constraint firstItem="MBO-fv-DsB" firstAttribute="top" secondItem="XkU-ap-YqL" secondAttribute="bottom" constant="20" id="czl-Bn-eru"/>
+                            <constraint firstItem="MBO-fv-DsB" firstAttribute="leading" secondItem="4Re-Lw-QMn" secondAttribute="leading" constant="20" id="dGh-h1-cdL"/>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="trailing" secondItem="N4U-TU-sGF" secondAttribute="trailing" constant="20" id="gn1-Z6-HyB"/>
+                            <constraint firstItem="4ax-AP-Cyq" firstAttribute="leading" secondItem="4Re-Lw-QMn" secondAttribute="leading" constant="103" id="htd-SE-yKc"/>
+                            <constraint firstItem="XkU-ap-YqL" firstAttribute="leading" secondItem="4Re-Lw-QMn" secondAttribute="leading" constant="103" id="kmc-MI-d4J"/>
+                            <constraint firstItem="N4U-TU-sGF" firstAttribute="top" secondItem="MBO-fv-DsB" secondAttribute="bottom" constant="20" id="p2E-Z4-Oa3"/>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="trailing" secondItem="jqQ-vT-clD" secondAttribute="trailing" constant="27" id="pTq-cC-o4h"/>
+                            <constraint firstItem="4ax-AP-Cyq" firstAttribute="top" secondItem="4Re-Lw-QMn" secondAttribute="top" constant="79" id="sFQ-b7-CKg"/>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="trailing" secondItem="4ax-AP-Cyq" secondAttribute="trailing" constant="103" id="w3m-fn-5uO"/>
+                            <constraint firstItem="1hB-AO-jwL" firstAttribute="leading" secondItem="4Re-Lw-QMn" secondAttribute="leading" constant="20" id="wQM-Bm-6YP"/>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="trailing" secondItem="XkU-ap-YqL" secondAttribute="trailing" constant="103" id="xjI-Vs-AaD"/>
+                            <constraint firstItem="4Re-Lw-QMn" firstAttribute="trailing" secondItem="MBO-fv-DsB" secondAttribute="trailing" constant="20" id="zrn-dl-Na6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addExerciseButton" destination="MBO-fv-DsB" id="vWl-GY-oTV"/>
+                        <outlet property="exercisesTableView" destination="N4U-TU-sGF" id="JJU-T8-xUs"/>
+                        <outlet property="nameTextField" destination="jqQ-vT-clD" id="Rhs-nD-5yK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awm-rg-e9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398.13084112149528" y="1172.1382289416847"/>
+        </scene>
+        <!--Exercise-->
+        <scene sceneID="FI2-VG-frX">
+            <objects>
+                <viewController storyboardIdentifier="ExerciseViewController" title="Exercise" id="gWG-gG-O9G" customClass="ExerciseViewController" customModule="FintessNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EdJ-vx-zsV">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7db-dV-78O">
+                                <rect key="frame" x="156.66666666666666" y="64" width="114.99999999999997" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rcq-4d-JbG">
+                                <rect key="frame" x="20" y="116" width="388" height="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JHo-Sy-lNs">
+                                <rect key="frame" x="20" y="161" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фиксировать веса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdy-wD-R0D">
+                                <rect key="frame" x="79" y="163.33333333333334" width="329" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-Yh-mX6" customClass="FancyButton" customModule="FintessNotesApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="212" width="388" height="38"/>
+                                <color key="backgroundColor" red="0.68261921489999999" green="0.15866146480000001" blue="0.20513166220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Сохранить упражнение">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSaveExerciseClick:" destination="gWG-gG-O9G" eventType="touchUpInside" id="YCi-zv-ifd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Frd-ao-Aqd"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tdy-wD-R0D" firstAttribute="top" secondItem="Rcq-4d-JbG" secondAttribute="bottom" constant="10.33" id="7dJ-KV-hFX"/>
+                            <constraint firstItem="tdy-wD-R0D" firstAttribute="leading" secondItem="JHo-Sy-lNs" secondAttribute="trailing" constant="10" id="COY-Zj-OxA"/>
+                            <constraint firstItem="7db-dV-78O" firstAttribute="top" secondItem="Frd-ao-Aqd" secondAttribute="top" constant="20" id="DTI-5O-qPe"/>
+                            <constraint firstItem="Rcq-4d-JbG" firstAttribute="leading" secondItem="Frd-ao-Aqd" secondAttribute="leading" constant="20" id="HbI-EL-ehz"/>
+                            <constraint firstItem="JHo-Sy-lNs" firstAttribute="top" secondItem="Rcq-4d-JbG" secondAttribute="bottom" constant="8" id="JFe-Tx-k0E"/>
+                            <constraint firstItem="Frd-ao-Aqd" firstAttribute="trailing" secondItem="l7r-Yh-mX6" secondAttribute="trailing" constant="20" id="JHA-zD-esL"/>
+                            <constraint firstItem="Frd-ao-Aqd" firstAttribute="trailing" secondItem="Rcq-4d-JbG" secondAttribute="trailing" constant="20" id="L6J-5w-mey"/>
+                            <constraint firstItem="l7r-Yh-mX6" firstAttribute="leading" secondItem="Frd-ao-Aqd" secondAttribute="leading" constant="20" id="Nwn-uU-d0H"/>
+                            <constraint firstItem="Rcq-4d-JbG" firstAttribute="top" secondItem="7db-dV-78O" secondAttribute="bottom" constant="20" id="O4H-QS-o6y"/>
+                            <constraint firstItem="l7r-Yh-mX6" firstAttribute="top" secondItem="JHo-Sy-lNs" secondAttribute="bottom" constant="20" id="Qco-T3-kS3"/>
+                            <constraint firstItem="7db-dV-78O" firstAttribute="centerX" secondItem="EdJ-vx-zsV" secondAttribute="centerX" id="hZe-7f-mvT"/>
+                            <constraint firstItem="JHo-Sy-lNs" firstAttribute="leading" secondItem="Frd-ao-Aqd" secondAttribute="leading" constant="20" id="t6J-N9-Sc9"/>
+                            <constraint firstItem="Frd-ao-Aqd" firstAttribute="trailing" secondItem="tdy-wD-R0D" secondAttribute="trailing" constant="20" id="yTx-Wn-UsP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kdu-kh-39s"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="500"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="Rcq-4d-JbG" id="YtX-C6-eKw"/>
+                        <outlet property="switchValue" destination="JHo-Sy-lNs" id="SWt-Sx-1Mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ok8-BT-fEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548.13084112149534" y="1172.1382289416847"/>
+        </scene>
+        <!--Done Exercise View Controller-->
+        <scene sceneID="Mis-Gi-qCQ">
+            <objects>
+                <viewController storyboardIdentifier="DoneExerciseViewController" id="pn3-Az-c7F" userLabel="Done Exercise View Controller" customClass="DoneExerciseViewController" customModule="FintessNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4rX-tu-V3u">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAm-Up-Ern">
+                                <rect key="frame" x="54" y="152" width="320" height="216"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="pn3-Az-c7F" id="QrD-ie-2vC"/>
+                                    <outlet property="delegate" destination="pn3-Az-c7F" id="co3-Sp-1d4"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество повторов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-de-QtA">
+                                <rect key="frame" x="101" y="104" width="226" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-FQ-vrd" customClass="FancyButton" customModule="FintessNotesApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="388" width="388" height="38"/>
+                                <color key="backgroundColor" red="0.65941721239999995" green="0.15866146480000001" blue="0.20513166220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Сохранить упражнение">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGradientBackground" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSaveClicked:" destination="pn3-Az-c7F" eventType="touchUpInside" id="L4d-6p-4fe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fNt-qx-Gk2"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SSc-de-QtA" firstAttribute="top" secondItem="fNt-qx-Gk2" secondAttribute="top" constant="60" id="Fe1-kL-gBX"/>
+                            <constraint firstItem="2wA-FQ-vrd" firstAttribute="top" secondItem="pAm-Up-Ern" secondAttribute="bottom" constant="20" id="UY7-h0-J8d"/>
+                            <constraint firstItem="pAm-Up-Ern" firstAttribute="centerX" secondItem="4rX-tu-V3u" secondAttribute="centerX" id="fGn-1P-qVg"/>
+                            <constraint firstItem="pAm-Up-Ern" firstAttribute="top" secondItem="SSc-de-QtA" secondAttribute="bottom" constant="20" id="oAg-lT-jmV"/>
+                            <constraint firstItem="SSc-de-QtA" firstAttribute="centerX" secondItem="4rX-tu-V3u" secondAttribute="centerX" id="oZ7-8X-uY5"/>
+                            <constraint firstItem="2wA-FQ-vrd" firstAttribute="leading" secondItem="fNt-qx-Gk2" secondAttribute="leading" constant="20" id="rad-uD-Gue"/>
+                            <constraint firstItem="fNt-qx-Gk2" firstAttribute="trailing" secondItem="2wA-FQ-vrd" secondAttribute="trailing" constant="20" id="yeU-mS-NYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="valuePicker" destination="pAm-Up-Ern" id="Pn3-tE-uMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgo-rT-N5j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553.2710280373831" y="1172.7861771058317"/>
+        </scene>
+        <!--Тренировки-->
+        <scene sceneID="2DQ-LC-pfD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bDt-GX-kFk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Тренировки" image="star.fill" catalog="system" selectedImage="star.fill" id="C7k-KD-Rki"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d4Z-Ma-do2">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemRedColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2gF-Tu-f9q" kind="relationship" relationship="rootViewController" id="wBP-Xs-77r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGa-Em-N2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397.10144927536237" y="447.99107142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1hB-AO-jwL">
+            <size key="intrinsicContentSize" width="221" height="38"/>
+        </designable>
+        <designable name="2wA-FQ-vrd">
+            <size key="intrinsicContentSize" width="228" height="38"/>
+        </designable>
+        <designable name="MBO-fv-DsB">
+            <size key="intrinsicContentSize" width="217" height="38"/>
+        </designable>
+        <designable name="l7r-Yh-mX6">
+            <size key="intrinsicContentSize" width="228" height="38"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

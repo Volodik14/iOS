@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="numberOfReps" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="numberOfSets" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="training" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Training" inverseName="exercises" inverseEntity="Training"/>
+    </entity>
+    <entity name="ExerciseTemplate" representedClassName="ExerciseTemplate" syncable="YES">
+        <attribute name="isWeight" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="trainingTemplate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainingTemplate" inverseName="exercisesTemplates" inverseEntity="TrainingTemplate"/>
+    </entity>
+    <entity name="Training" representedClassName="Training" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="training" inverseEntity="Exercise"/>
+    </entity>
+    <entity name="TrainingTemplate" representedClassName="TrainingTemplate" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exercisesTemplates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExerciseTemplate" inverseName="trainingTemplate" inverseEntity="ExerciseTemplate"/>
+    </entity>
+    <elements>
+        <element name="Exercise" positionX="-27" positionY="18" width="128" height="104"/>
+        <element name="Training" positionX="18" positionY="90" width="128" height="74"/>
+        <element name="TrainingTemplate" positionX="0" positionY="81" width="128" height="73"/>
+        <element name="ExerciseTemplate" positionX="9" positionY="90" width="128" height="88"/>
+    </elements>
+</model>
